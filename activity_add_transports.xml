@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="#F1EAEA"
+    tools:context=".activities.SalesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="selectImage"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_local_shipping_24" />
+
+
+        <EditText
+            android:id="@+id/et_transport_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transport Type"
+            android:inputType="textMultiLine"
+            android:padding="16dp" />
+
+
+
+        <EditText
+            android:id="@+id/et_transport_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transport Company"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:layout_marginTop="30dp"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>
